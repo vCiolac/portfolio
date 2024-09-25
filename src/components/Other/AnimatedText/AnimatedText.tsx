@@ -7,7 +7,7 @@ interface AnimatedTextProps {
   delay?: number;
 }
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className = '', delay = 1.5 }) => {
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className = '', delay = 0.1 }) => {
   const textRef = useTextAnimation(true, 0.05, delay);
 
   return (

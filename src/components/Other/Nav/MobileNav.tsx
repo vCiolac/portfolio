@@ -28,7 +28,7 @@ export const MobileNav = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-row items-center align-middle px-4 pt-6 space-x-12">
+          className="flex flex-row items-center align-middle px-4 pt-16 space-x-12">
           <Link href="/" onClick={handleLinkClick}>
             <AnimatedText
               text={t('home_full_name')}
@@ -39,7 +39,7 @@ export const MobileNav = () => {
           <ThemeButton isMobile />
           <LanguageSwitcher isMobile />
         </motion.div>
-        <div className="flex flex-col justify-end h-full text-start pb-8 px-6">
+        <div className="flex flex-col justify-end h-full text-start pb-16 px-6">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
