@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { NavInterface } from "@/interfaces/NavInterface";
 import { links } from "@/data/nav";
+import AnimatedText from "../AnimatedText/AnimatedText";
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles, onLinkClick }: NavInterface) => {
   const path = usePathname();
@@ -30,7 +31,10 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, onLinkClick }: NavI
               className={`${underlineStyles}`}
             />
           )}
-          {link.name}
+          <AnimatedText
+            text={link.name}
+            delay={1}
+          />
         </Link>
       ))}
     </nav>

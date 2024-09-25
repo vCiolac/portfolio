@@ -43,7 +43,7 @@ const HomeHero = () => {
   }, []);
 
   return (
-    <section className='relative pt-28 pb-[1rem] bg-black dark:bg-offwhite text-white dark:text-black h-screen'>
+    <section className='relative lg:pt-28 pt-24 pb-[1rem] bg-black dark:bg-offwhite text-white dark:text-black h-screen'>
       <div className='md:grid grid-cols-2 h-full'>
         <div className='col-span-1 relative md:px-16 px-4 flex flex-col justify-between'>
           <div ref={hrRef}>

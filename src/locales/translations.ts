@@ -38,7 +38,7 @@ export const translations:  TranslationsByLanguage = {
     home_middle_name: "Ciolac",
     home_about_1: "Passionate about technology and computing,",
     home_about_2: "I have always been fascinated by the possibility of creating new and innovative things.",
-    home_about_3: "With attachment to the front end and fascination with the back end, I always seek to improve my",
-    home_about_4: "skills and knowledge to deliver the best possible result.",
+    home_about_3: "With attachment to the front end and fascination with the back end, I always seek ",
+    home_about_4: "to improve my skills and knowledge to deliver the best possible result.",
   },
 };
