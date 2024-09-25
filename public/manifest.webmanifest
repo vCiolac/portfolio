@@ -1,0 +1,78 @@
+{
+  "name": "Indígena Fashion Week",
+  "short_name": "IFW",
+  "description": "A Indígena Fashion Week (IFW) é um evento que celebra a moda e a cultura dos povos originários do Brasil. Descubra criações inovadoras de estilistas indígenas e participe dessa celebração única.",
+  "author": "Victor Ciolac",
+  "lang": "pt-BR",
+  "theme_color": "#7a90ff",
+  "background_color": "#090a1a",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon521x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon32x32.webp",
+      "sizes": "32x32",
+      "type": "image/webp",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon48x48.webp",
+      "sizes": "48x48",
+      "type": "image/webp",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon96x96.webp",
+      "sizes": "96x96",
+      "type": "image/webp",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon144x144.webp",
+      "sizes": "144x144",
+      "type": "image/webp",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon521x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable any"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://ifw.vercel.app/",
+      "id": "com.indigenafashionweek.app"
+    }
+  ],
+  "manifest_version": 3,
+  "permissions": ["notifications"],
+  "offline_enabled": true,
+  "routing": {
+    "dynamic": true,
+    "static": true
+  },
+  "i18n": {
+    "locales": {
+      "en": {
+        "name": "Indigenous Fashion Week",
+        "description": "The Indigenous Fashion Week (IFW) is an event celebrating the fashion and culture of Brazil's indigenous peoples. Discover innovative creations by indigenous designers and join this unique celebration."
+      }
+    },
+    "default_locale": "pt-BR"
+  },
+  "navigation": {
+    "home": "/",
+    "about": "/about",
+    "contact": "/contact",
+    "subscribe": "/subscribe"
+  }
+}
