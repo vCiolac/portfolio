@@ -3,7 +3,7 @@ import HomeHero from '@/components/Other/Home/HomeHero';
 
 const Home = () => {
   return (
-    <main className='bg-black'>
+    <main className='bg-black dark:bg-offwhite'>
       <HomeHero />
       <HomeAbout />
     </main>

@@ -23,7 +23,7 @@ const LanguageSwitcher = () => {
       onClick={toggleLanguage}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative w-8 h-6 rounded-full flex items-center justify-center text-white font-bold cursor-pointer overflow-hidden"
+      className="relative w-8 h-6 rounded-full flex items-center justify-center dark:text-black text-white font-bold cursor-pointer overflow-hidden"
       whileTap={{ scale: 0.9 }}
     >
       <span className={`absolute inset-0 bg-cover bg-center transition-all duration-300

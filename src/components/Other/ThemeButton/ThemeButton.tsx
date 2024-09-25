@@ -47,7 +47,7 @@ const ThemeToggler = () => {
       onClick={toggleTheme}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative w-6 h-6 flex items-center justify-center rounded-full transition mx-2 border-white border-[1px]"
+      className="relative w-6 h-6 flex items-center justify-center rounded-full transition mx-2 border-white dark:border-black border-[1px]"
       aria-label="Toggle theme"
     >
       <div

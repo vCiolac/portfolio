@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         border: "#384261",
         white: '#FFFFFF',
+        offwhite: '#E1DFDD',
         black: '#000000',
         bbrom: '#4D3B35',
         transparent: 'transparent',
