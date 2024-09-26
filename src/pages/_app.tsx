@@ -26,17 +26,16 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <LanguageProvider>
       <AnimatePresence mode='wait'>
-        {showIntroAnimation ? (
-          <IntroAnimation onComplete={handleAnimationComplete} />
-        ) : (
-          <Layout>
-            <Component {...pageProps} />
-            <Toaster />
-          </Layout>
-        )}
+        <Layout>
+          {showIntroAnimation && (
+            <IntroAnimation onComplete={handleAnimationComplete} />
+          )}
+          <Component {...pageProps} />
+          <Toaster />
+        </Layout>
       </AnimatePresence>
     </LanguageProvider>
   );
-};
+}
 
 export default App;

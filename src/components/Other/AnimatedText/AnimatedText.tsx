@@ -7,13 +7,13 @@ interface AnimatedTextProps {
   delay?: number;
 }
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className = '', delay = 0.1 }) => {
+const AnimatedText: React.FC<AnimatedTextProps> = ({ text, className = '', delay = 0 }) => {
   const textRef = useTextAnimation(true, 0.05, delay);
 
   return (
     <div ref={textRef} className="">
       <h2 className={`flow-char ${className}`}>
-        {splitToSpan(text, 'flow-char translate-y-[115%]')}
+        {splitToSpan(text, 'flow-char translate-y-[115%] font-neue')}
       </h2>
     </div>
   );

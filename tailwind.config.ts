@@ -22,6 +22,7 @@ const config: Config = {
       fontFamily: {
         jost: ['Jost', 'sans-serif'],
         abril: ['Abril Fatface', 'serif'],
+        neue: ['NeueMontreal', 'sans-serif'], 
       },
       rotate: {
         270: '270deg',

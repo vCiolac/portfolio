@@ -26,7 +26,6 @@
   @apply text-black;
 }
 
-/* globals.css */
 @layer components {
   .custom-scrollbar {
     position: relative;
@@ -70,14 +69,12 @@
   animation: fillAnimation 3.5s ease-out forwards;
 }
 
-/* Animação da bola ao passar o mouse */
 .ball {
   position: relative;
   background: linear-gradient(to right, black 50%, white 50%);
   transition: background-color 0.3s, transform 0.5s;
 }
 
-/* Animação de rotação ao passar o mouse */
 .ball:hover {
   animation: rotate 0.5s linear;
 }
@@ -90,3 +87,20 @@
       transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('/fonts/NeueMontreal-Regular.woff2') format('woff2'),
+       url('/fonts/NeueMontreal-Regular.woff') format('woff');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('/fonts/NeueMontreal-Medium.woff2') format('woff2'),
+       url('/fonts/NeueMontreal-Medium.woff') format('woff');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
