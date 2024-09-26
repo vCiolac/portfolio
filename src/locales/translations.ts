@@ -25,6 +25,10 @@ export const translations:  TranslationsByLanguage = {
     home_about_2: "Quando não estou programando, sou um pai presente, cuidando da minha filha e do meu cachorro. Como hobby, sou desenvolvedor de jogos na Godot e sou voluntário em programas ambientais, participando de reflorestamentos e contribuindo para a preservação do meio ambiente.",
     home_about_3: "Em 2024, conclui minha formação em Desenvolvimento Web Full-Stack pela Trybe, onde me dediquei a mais de 1.500 horas de treinamento intensivo. Atualmente estou estudando Análise de Dados pela Google em parceria com a Coursera.",
     home_about_4: "Como freelancer, vejo cada projeto como uma oportunidade única de aprender e crescer. Estou sempre ansioso para colaborar em novos desafios e criar soluções que impactem positivamente.",
+    home_works: "Trabalhos",
+    work_title: "Título do Trabalho",
+    work_description: "Descrição do Trabalho",
+    view_project: "Ver Projeto",
   },
   en: {
     greeting: "Victor Ciolac",
@@ -42,5 +46,9 @@ export const translations:  TranslationsByLanguage = {
     home_about_2: "When I'm not programming, I'm a present father, taking care of my daughter and my dog. As a hobby, I'm a game developer in Godot and I volunteer in environmental programs, participating in reforestation and contributing to the preservation of the environment.",
     home_about_3: "In 2024, I completed my training in Full-Stack Web Development by Trybe, where I dedicated myself to over 1,500 hours of intensive training. I am currently studying Data Analysis by Google in partnership with Coursera.",
     home_about_4: "As a freelancer, I see each project as a unique opportunity to learn and grow. I am always eager to collaborate on new challenges and create solutions that have a positive impact.",
+    home_works: "Works",
+    work_title: "Work Title",
+    work_description: "Work Description",
+    view_project: "View Project",
   },
 };

@@ -2,12 +2,14 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useLanguage } from '@/context/LanguageContext';
+import HomeMoreAbout from './HomeMoreAbout';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HomeAbout = () => {
   const { t } = useLanguage();
   const aboutRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const numberRef = useRef<HTMLDivElement | null>(null); // Ref para o "01"
 
   const animateText = (text: string) => {
     const words = text.split(' ').map((word, index) => {
@@ -44,7 +46,7 @@ const HomeAbout = () => {
           {
             y: 0,
             opacity: 1,
-            duration: 0.2,
+            duration: 5.2,
             ease: 'power3.out',
             stagger: 0.1,
             scrollTrigger: {
@@ -52,31 +54,62 @@ const HomeAbout = () => {
               start: 'top 85%',
               end: 'bottom 80%',
               markers: false,
+              scrub: true,
             },
           }
         );
       }
     });
+
+    if (numberRef.current) {
+      gsap.fromTo(
+        numberRef.current,
+        { opacity: 0, y: 100 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: numberRef.current,
+            start: 'top 85%',
+            end: 'bottom 75%',
+            markers: false,
+          },
+        }
+      );
+    }
   }, []);
 
   return (
-    <section className='md:py-16 h-[190vh] md:h-[110vh] lg:h-[85vh] dark:bg-offwhite text-white dark:text-black'>
-      <div className='container mx-auto px-4 md:px-20'>
-        <div ref={(el) => {
-          aboutRefs.current[0] = el;
-        }}
-          className="text-3xl text-left mb-8 uppercase font-neue">
+    <section className='py-8 dark:bg-offwhite text-white dark:text-black flex flex-row'>
+      <div
+        ref={numberRef}
+        className="text-xl font-bold text-center md:px-16 px-4"
+      >
+        01
+      </div>
+      <div className='container mx-auto px-2 md:pr-40 md:pl-52'>
+        <div
+          ref={(el) => {
+            aboutRefs.current[0] = el;
+          }}
+          className="text-3xl md:text-4xl font-medium text-left space-y-1 uppercase font-neue"
+        >
           {animateText(t('home_about'))}
-          <p className="text-3xl mt-8">
+          <p className="text-3xl md:text-4xl font-medium pt-8 space-y-1">
             {animateText(t('home_about_1'))}
           </p>
         </div>
-        <div ref={(el) => {
-          aboutRefs.current[1] = el;
-        }}
-          className="text-3xl text-left mb-8 uppercase font-neue">
+        <div
+          ref={(el) => {
+            aboutRefs.current[1] = el;
+          }}
+          className="text-3xl text-left md:text-4xl space-y-1 font-medium my-8 uppercase font-neue"
+        >
           {animateText(t('home_about_2'))}
         </div>
+        <HomeMoreAbout />
       </div>
     </section>
   );
