@@ -8,14 +8,14 @@ import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HomeWorks = () => {
+const HomeProject = () => {
   const { t } = useLanguage();
-  const worksRef = useRef<HTMLDivElement | null>(null);
+  const projectRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (worksRef.current) {
+    if (projectRef.current) {
       gsap.fromTo(
-        worksRef.current,
+        projectRef.current,
         { opacity: 0, y: 50 },
         {
           opacity: 1,
@@ -23,7 +23,7 @@ const HomeWorks = () => {
           duration: 1.2,
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: worksRef.current,
+            trigger: projectRef.current,
             start: 'top 85%',
             end: 'bottom 60%',
             scrub: true,
@@ -37,32 +37,41 @@ const HomeWorks = () => {
     <section className="py-16 dark:bg-offwhite text-white dark:text-black flex flex-col">
       <div className='flex flex-row mb-16'>
         <div className="text-xl font-bold text-center md:px-16 px-4">
-          02
+          03
         </div>
-        <div ref={worksRef} className="container mx-auto px-2 md:pr-40 md:pl-52">
+        <div ref={projectRef} className="container mx-auto px-2 md:pr-40 md:pl-52">
           <h2 className="text-xl md:text-2xl font-medium uppercase font-neue mb-8">
-            {t('home_works')}
+            {t('home_personal_project')}
           </h2>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:px-16 px-4">
         <div className="flex flex-col justify-between">
           <div>
-            <h3 className="text-2xl md:text-7xl uppercase font-neue font-medium">{t('work_title')}</h3>
-            <p className="text-lg md:text-2xl uppercase font-neue font-medium my-8">{t('work_description')}</p>
+            <h3 className="text-2xl md:text-7xl uppercase font-neue font-medium">{t('personal_project_title')}</h3>
+            <p className="text-lg md:text-2xl uppercase font-neue font-medium my-8">{t('personal_project_description')}</p>
           </div>
-          <Link
-            target="blank"
-            href="#"
-            className="flex items-center text-lg md:text-xl font-neue animate-underline dark:dark-animate-underline max-w-36"
-          >
-            {t('view_website')} <FiArrowUpRight className="ml-2" />
-          </Link>
+          <div className='flex flex-row gap-x-8'>
+            <Link
+              target="_blank"
+              href="#"
+              className="flex items-center text-lg md:text-xl font-neue animate-underline dark:dark-animate-underline"
+            >
+              {t('view_website')} <FiArrowUpRight className="ml-2" />
+            </Link>
+            <Link
+              target="_blank"
+              href="#"
+              className="flex items-center text-lg md:text-xl font-neue animate-underline dark:dark-animate-underline"
+            >
+              {t('view_github')} <FiArrowUpRight className="ml-2" />
+            </Link>
+          </div>
         </div>
 
         <div className="relative justify-self-center">
           <Image
-            src="/path-to-project-image.jpg"
+            src="/path-to-personal-project-image.jpg"
             alt="Project Image"
             width={500}
             height={300}
@@ -74,7 +83,7 @@ const HomeWorks = () => {
             href="#"
             className="text-lg md:text-xl font-neue animate-border dark:dark-animate-border"
           >
-            {t('see_all_works')}
+            {t('see_all_projects')}
           </Link>
         </div>
       </div>
@@ -82,4 +91,4 @@ const HomeWorks = () => {
   );
 };
 
-export default HomeWorks;
+export default HomeProject;

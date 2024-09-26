@@ -35,7 +35,7 @@ const HomeAbout = () => {
     );
   };
 
-  useEffect(() => {
+  const triggerAnimation = () => {
     aboutRefs.current.forEach((ref) => {
       if (ref) {
         const words = ref.querySelectorAll('span');
@@ -79,17 +79,21 @@ const HomeAbout = () => {
         }
       );
     }
-  }, []);
+  };
+
+  useEffect(() => {
+    triggerAnimation();
+  }, [t]); // Adiciona 't' como dependência para reiniciar animações ao trocar a linguagem
 
   return (
     <section className='py-8 dark:bg-offwhite text-white dark:text-black flex flex-row'>
       <div
         ref={numberRef}
-        className="text-xl font-bold text-center md:px-16 px-4"
+        className="text-xl font-bold text-center md:px-16 pl-4"
       >
         01
       </div>
-      <div className='container mx-auto px-2 md:pr-40 md:pl-52'>
+      <div className='container mx-auto pl-4 pr-12  md:pr-40 md:pl-52'>
         <div
           ref={(el) => {
             aboutRefs.current[0] = el;

@@ -35,7 +35,7 @@ const HomeMoreAbout = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-8 md:px-20 text-white">
+    <div className="container mx-auto py-8 dark:text-black text-white">
       <div ref={(el) => { moreAboutRefs.current[0] = el; }} className="text-xl text-left mb-8 font-medium font-neue">
         {t('home_about_3')}
       </div>
@@ -46,7 +46,7 @@ const HomeMoreAbout = () => {
         moreAboutRefs.current[2] = el;
       }}
         className="text-xl text-left mb-8 font-medium font-neue">
-        <Link href="/about" className="underline">
+        <Link href="/about" className="animate-border dark:dark-animate-border">
           Saiba mais sobre mim
         </Link>
       </div>

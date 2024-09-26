@@ -104,3 +104,93 @@
   font-style: normal;
 }
 
+@keyframes borderAnimation {
+  0% {
+    transform: scaleX(1);
+    left: 0;
+  }
+  25% {
+    transform: translateX(-10%) scaleX(1);
+  }
+  50% {
+    transform: translateX(10%) scaleX(1);
+  }
+  75% {
+    transform: translateX(-5%) scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+    left: 0;
+  }
+}
+
+@layer components {
+  .animate-border {
+    position: relative;
+    display: inline-block;
+  }
+
+  .animate-border::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: silver;
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
+    transform-origin: center;
+  }
+
+  .dark-animate-border::after {
+    background-color: black;
+  }
+
+  .animate-border:hover::after {
+    animation: borderAnimation 0.5s forwards;
+  }
+}
+
+@keyframes underLineAnimation {
+  0% {
+    transform: scaleX(0);
+    left: 0;
+  }
+  50% {
+    transform: scaleX(1);
+    left: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    left: 0;
+  }
+}
+
+@layer components {
+  .animate-underline {
+    position: relative;
+    display: inline-block;
+  }
+
+  .animate-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    height: 2px;
+    width: 100%;
+    background-color: silver;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: center;
+  }
+
+  .dark-animate-underline::after {
+    background-color: black;
+  }
+
+  .animate-underline:hover::after {
+    animation: underLineAnimation 0.5s forwards;
+  }
+}
