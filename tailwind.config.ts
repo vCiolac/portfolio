@@ -17,7 +17,7 @@ const config: Config = {
         bbrom: '#4D3B35',
         transparent: 'transparent',
         background: "#f9f9f9",
-        primary: "#c59861",
+        primary: "#ec965b",
       },
       fontFamily: {
         jost: ['Jost', 'sans-serif'],

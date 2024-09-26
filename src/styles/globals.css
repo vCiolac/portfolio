@@ -194,3 +194,28 @@
     animation: underLineAnimation 0.5s forwards;
   }
 }
+
+@keyframes colorAnimation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@layer components {
+  .animate-text {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, transparent, #ec965b, transparent);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 0.5s ease;
+  }
+
+  .animate-text:hover {
+    animation: colorAnimation 0.5s forwards;
+  }
+}
