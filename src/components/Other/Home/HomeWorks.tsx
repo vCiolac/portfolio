@@ -63,8 +63,8 @@ const HomeWorks = () => {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: imageRef.current,
-            start: 'top 85%',
-            end: 'bottom 75%',
+            start: 'top 95%',
+            end: 'bottom 85%',
             scrub: true,
           },
         }

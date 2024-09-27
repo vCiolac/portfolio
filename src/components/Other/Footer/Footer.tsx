@@ -18,7 +18,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="self-center md:self-end py-1">
+        <div className="self-end md:self-end py-1 px-4">
           <Socials
             containerStyles="flex gap-x-6 mx-auto"
             iconsStyles="text-white/70 text-[20px] hover:text-primary transition-all"
