@@ -93,7 +93,7 @@ const HomeAbout = () => {
       >
         01
       </div>
-      <div className='container mx-auto pl-4 pr-20 md:pr-40 md:pl-52'>
+      <div className='container mx-auto pl-4 pr-16 md:pr-40 md:pl-52'>
         <div
           ref={(el) => {
             aboutRefs.current[0] = el;
