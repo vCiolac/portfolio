@@ -83,7 +83,7 @@ const HomeAbout = () => {
 
   useEffect(() => {
     triggerAnimation();
-  }, [t]); // Adiciona 't' como dependência para reiniciar animações ao trocar a linguagem
+  }, [t]);
 
   return (
     <section className='py-8 dark:bg-offwhite text-white dark:text-black flex flex-row'>
@@ -93,7 +93,7 @@ const HomeAbout = () => {
       >
         01
       </div>
-      <div className='container mx-auto pl-4 pr-12  md:pr-40 md:pl-52'>
+      <div className='container mx-auto pl-4 pr-16 md:pr-40 md:pl-52'>
         <div
           ref={(el) => {
             aboutRefs.current[0] = el;

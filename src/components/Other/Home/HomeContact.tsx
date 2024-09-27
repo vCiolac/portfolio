@@ -39,7 +39,7 @@ const HomeContact = () => {
           04
         </div>
         <div ref={contactRef} className="container mx-auto px-2 md:pr-40 md:pl-52">
-          <h2 className="text-xl md:text-2xl font-medium uppercase font-neue mb-8">
+          <h2 className="text-xl md:text-2xl font-medium uppercase font-neue md:mb-8">
             {t('home_contact')}
           </h2>
         </div>

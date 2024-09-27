@@ -6,13 +6,13 @@ import HomeWorks from '@/components/Other/Home/HomeWorks';
 
 const Home = () => {
   return (
-    <main className='bg-black dark:bg-offwhite overflow-hidden'>
+    <section className='bg-black dark:bg-offwhite overflow-hidden'>
       <HomeHero />
       <HomeAbout />
       <HomeWorks />
       <HomeProject />
       <HomeContact />
-    </main>
+    </section>
   );
 };
 

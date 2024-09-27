@@ -1,24 +1,38 @@
-import Socials from "@/components/Other/Socials/Socials";
-import FooterNav from "../Nav/FooterNav";
+// components/Footer.tsx
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import Socials from "../Socials/Socials";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
   return (
-    <footer className="bg-gray-800 text-white p-2 text-center">
-      <div className="flex flex-col items-center gap-4 mb-2">
-        <Socials
-          containerStyles="flex gap-x-6 mx-auto"
-          iconsStyles="text-white/70 text-[20px] hover:text-primary transition-all"
-        />
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
-          <FooterNav
-            containerStyles="flex gap-x-8 items-center"
-            linkStyles="relative hover:text-primary transition-all"
-            underlineStyles=""
+    <footer className="text-white py-8">
+      <div className="container mx-auto space-y-4 flex md:flex-row flex-col justify-between md:items-center md:px-16 px-4 font-neue">
+        <div className="text-left font-medium">
+          <p className="text-xl">
+            {t("home_full_name")}
+          </p>
+          <p className="text-xl">
+            {t("description")}
+          </p>
+        </div>
+
+        <div className="self-center md:self-end py-1">
+          <Socials
+            containerStyles="flex gap-x-6 mx-auto"
+            iconsStyles="text-white/70 text-[20px] hover:text-primary transition-all"
           />
         </div>
-        <p className="text-xs">
-          &copy; 2024 Frabrica de Sites. Todos os direitos reservados.
-        </p>
+
+        <div className="md:text-right font-medium">
+          <p className="text-md md:text-xl">
+            © {new Date().getFullYear()}
+          </p>
+          <p className="text-md md:text-xl">
+            Todos os direitos reservados
+          </p>
+        </div>
       </div>
     </footer>
   );

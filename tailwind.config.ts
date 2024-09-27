@@ -16,7 +16,7 @@ const config: Config = {
         black: '#000000',
         bbrom: '#4D3B35',
         transparent: 'transparent',
-        background: "#f9f9f9",
+        background: "#000000",
         primary: "#ec965b",
       },
       fontFamily: {

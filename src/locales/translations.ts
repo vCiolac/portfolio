@@ -8,7 +8,7 @@ interface TranslationsByLanguage {
   [lang: string]: Translations;
 }
 
-export const translations:  TranslationsByLanguage = {
+export const translations: TranslationsByLanguage = {
   pt: {
     greeting: "Victor Ciolac",
     description: "Desenvolvedor Full Stack",
@@ -26,14 +26,14 @@ export const translations:  TranslationsByLanguage = {
     home_about_3: "Em 2024, conclui minha formação em Desenvolvimento Web Full-Stack pela Trybe, onde me dediquei a mais de 1.500 horas de treinamento intensivo. Atualmente estou estudando Análise de Dados pela Google em parceria com a Coursera.",
     home_about_4: "Como freelancer, vejo cada projeto como uma oportunidade única de aprender e crescer. Estou sempre ansioso para colaborar em novos desafios e criar soluções que impactem positivamente.",
     home_works: "Trabalho Mais Recente",
-    work_title: "Título do Trabalho",
-    work_description: "Descrição do Trabalho",
+    work_title: "IFWB",
+    work_description: "O site oficial da IFWB. Um evento que promove a moda como ferramenta de resistência e diversidade, destacando o trabalho criativo de estilistas indígenas. Em 2025, o IFWB vai celebrar a cultura indígena por meio de desfiles, debates e manifestações artísticas, projetando suas criações para o cenário nacional e internacional",
     view_website: "Ver Site",
     view_github: "Github",
     see_all_works: "Ver todos os trabalhos",
     home_personal_project: "Projeto Pessoal Mais Recente",
-    personal_project_title: "Título do Projeto Pessoal",
-    personal_project_description: "Descrição do Projeto Pessoal",
+    personal_project_title: "Tora Wood",
+    personal_project_description: "E-commerce oficial da minha marca de biojoias. Oferecendo uma experiência de compra intuitiva e segura. Com integração de pagamento via Pix, cartões de crédito, e funcionalidades como recomendações personalizadas e avaliações, ele une elegância e tecnologia para destacar a beleza das biojoias",
     see_all_projects: "Ver todos os projetos",
     home_contact: "Entre em Contato",
     contact_title: "Fale Comigo",
@@ -56,14 +56,14 @@ export const translations:  TranslationsByLanguage = {
     home_about_3: "In 2024, I completed my training in Full-Stack Web Development by Trybe, where I dedicated myself to over 1,500 hours of intensive training. I am currently studying Data Analysis by Google in partnership with Coursera.",
     home_about_4: "As a freelancer, I see each project as a unique opportunity to learn and grow. I am always eager to collaborate on new challenges and create solutions that have a positive impact.",
     home_works: "Most Recent Work",
-    work_title: "Work Title",
-    work_description: "Work Description",
+    work_title: "IFWB",
+    work_description: "The official IFWB website. An event that promotes fashion as a tool for resistance and diversity, highlighting the creative work of indigenous stylists. In 2025, the IFWB will celebrate indigenous culture through fashion shows, debates, and artistic manifestations, projecting their creations to the national and international scene",
     view_website: "View Website",
     view_github: "Github",
     see_all_works: "See all works",
     home_personal_project: "Most Recent Personal Project",
-    personal_project_title: "Personal Project Title",
-    personal_project_description: "Personal Project Description",
+    personal_project_title: "Tora Wood",
+    personal_project_description: "Official e-commerce of my biojewelry brand. Offering an intuitive and secure shopping experience. With payment integration via Pix, credit cards, and features such as personalized recommendations and reviews, it combines elegance and technology to highlight the beauty of biojewelry",
     see_all_projects: "See all projects",
     home_contact: "Contact Me",
     contact_title: "Get in Touch",

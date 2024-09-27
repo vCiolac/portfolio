@@ -9,7 +9,7 @@ const Layout = ({ children }: ChildrenInterface) => {
     <Transition>
       <Header />
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </Transition>
   );
 };
