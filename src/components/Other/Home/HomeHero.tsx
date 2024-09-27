@@ -48,7 +48,7 @@ const HomeHero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.2 }}
-      className='relative lg:pt-28 pt-[4.6rem] pb-[1rem] bg-black dark:bg-offwhite text-white dark:text-black h-screen'>
+      className='relative lg:pt-28 pt-[4.6rem] pb-[1rem] bg-black dark:bg-offwhite text-white dark:text-black min-h-screen'>
       <div className='md:grid grid-cols-2 h-full'>
         <div className='col-span-1 relative md:px-16 px-4 flex flex-col justify-between'>
           <div ref={hrRef}>
