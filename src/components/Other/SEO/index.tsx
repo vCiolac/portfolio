@@ -33,10 +33,10 @@ const Seo = ({ title, description }: SeoInterface) => {
             <link rel="canonical" href="https://vciolac.vercel.app/" />
             <link rel="manifest" href={"/manifest.webmanifest"} />
 
-            <meta name="theme-color" content="#7A90FF" />
-            <meta name="msapplication-TileColor" content="#7A90FF" />
-            <meta name="msapplication-navbutton-color" content="#7A90FF" />
-            <meta name="apple-mobile-web-app-status-bar-style" content="#7A90FF" />
+            <meta name="theme-color" content="#000000" />
+            <meta name="msapplication-TileColor" content="#000000" />
+            <meta name="msapplication-navbutton-color" content="#000000" />
+            <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
             
             <meta name="robots" content="index,follow" />
             <meta name="googlebot" content="index, follow" />
