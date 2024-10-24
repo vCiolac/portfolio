@@ -54,14 +54,14 @@ const WorksProjectsPage = () => {
         <div className="flex flex-col justify-start text-start mb-8">
           <button
             onClick={() => handleTabChange("works")}
-            className={`text-4xl md:text-7xl uppercase font-neue font-medium ${activeTab === "works" ? "text-white" : "text-gray-500"}`}
+            className={`text-4xl md:text-7xl uppercase font-neue font-medium ${activeTab === "works" ? "text-white dark:text-black" : "text-gray-500"}`}
           >
             {t("works")}
             <span className={`text-4xl px-1`}>({worksCount})</span>
           </button>
           <button
             onClick={() => handleTabChange("projects")}
-            className={`text-4xl md:text-7xl uppercase font-neue font-medium ${activeTab === "projects" ? "text-white" : "text-gray-500"}`}
+            className={`text-4xl md:text-7xl uppercase font-neue font-medium ${activeTab === "projects" ? "text-white  dark:text-black" : "text-gray-500"}`}
           >
             {t("projects")}
             <span className={`text-4xl px-1`}>({projectsCount})</span>

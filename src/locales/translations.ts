@@ -1,3 +1,5 @@
+import { emit, send } from "process";
+
 export type Language = 'pt' | 'en';
 
 interface Translations {
@@ -64,9 +66,19 @@ export const translations: TranslationsByLanguage = {
     personal_project_description9: "Meu primeiro projeto em JavaScript, uma plataforma simples e divertida para criar e desenhar imagens com pixels.",
 
     // Contatos Home
+    name: 'Nome',
+    message: 'Mensagem',
+    send_message: 'Enviar Mensagem',
+    name_required: 'Nome é obrigatório',
+    message_required: 'Mensagem é obrigatória',
+    email_required: 'Email é obrigatório',
+    contact_phrase: 'Você tem um projeto ou ideia em mente que precisa de assistência? Se você está procurando uma colaboração profissional, tem uma tarefa específica ou precisa de expertise técnica, sinta-se à vontade para me contatar a qualquer momento. Vamos trabalhar juntos para dar vida à sua visão!',
     home_contact: "Entre em Contato",
     contact_title: "Fale Comigo",
     contact_description: "Estou sempre aberto a novos desafios e oportunidades. Entre em contato comigo para discutirmos como posso ajudar em seu projeto.",
+    sending: "Enviando...",
+    send_success: "Mensagem enviada com sucesso!",
+    send_error: "Erro ao enviar a mensagem. Tente novamente.",
     // SEO
     about_seo_title: "Sobre mim",
     about_description: "Descubra mais sobre Victor Ciolac, um desenvolvedor Full Stack apaixonado por tecnologia e inovação.",
@@ -132,6 +144,16 @@ export const translations: TranslationsByLanguage = {
     contact_title: "Get in Touch",
     contact_description: "I'm always open to new challenges and opportunities. Get in touch with me to discuss how I can help with your project.",
     // SEO
+    name: 'Name',
+    message: 'Message',
+    send_message: 'Send Message',
+    name_required: 'Name is required',
+    message_required: 'Message is required',
+    email_required: 'Email is required',
+    contact_phrase: "Do you have a project or idea in mind that you need assistance with? Whether you're looking for professional collaboration, have a specific task in mind, or need technical expertise, feel free to contact me anytime. Let's work together to bring your vision to life!",
+    sending: "Sending...",
+    send_success: "Message sent successfully!",
+    send_error: "Error sending message. Try again.",
     about_seo_title: "About me",
     about_description: "Discover more about Victor Ciolac, a Full Stack developer passionate about technology and innovation.",
     project_title: "Projects | Victor Ciolac",
