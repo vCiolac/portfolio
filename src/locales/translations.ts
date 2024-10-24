@@ -35,6 +35,7 @@ export const translations: TranslationsByLanguage = {
     projects: "Projetos",
     home_personal_project: "Projeto Pessoal Mais Recente",
     see_all_projects: "Ver todos os projetos",
+    about_title: "Quem sou eu?",
     // Trabalhos
     works: "Trabalhos",
     work_title: "CMTraT",
@@ -66,9 +67,12 @@ export const translations: TranslationsByLanguage = {
     home_contact: "Entre em Contato",
     contact_title: "Fale Comigo",
     contact_description: "Estou sempre aberto a novos desafios e oportunidades. Entre em contato comigo para discutirmos como posso ajudar em seu projeto.",
-    // SEO Projetos
+    // SEO
+    about_seo_title: "Sobre mim",
+    about_description: "Descubra mais sobre Victor Ciolac, um desenvolvedor Full Stack apaixonado por tecnologia e inovação.",
     project_title: "Projetos | Victor Ciolac",
     projects_description: "Conheça alguns dos projetos que desenvolvi. Cada um deles é único e foi criado com dedicação e paixão.",
+    // 
   },
   en: {
     greeting: "Victor Ciolac",
@@ -94,6 +98,7 @@ export const translations: TranslationsByLanguage = {
     see_all_works: "See all works",
     home_personal_project: "Most Recent Personal Project",
     see_all_projects: "See all projects",
+    about_title: "Who am I?",
     // Works
     works: "Works",
     work_title: "CMTraT",
@@ -126,7 +131,9 @@ export const translations: TranslationsByLanguage = {
     home_contact: "Contact Me",
     contact_title: "Get in Touch",
     contact_description: "I'm always open to new challenges and opportunities. Get in touch with me to discuss how I can help with your project.",
-    // SEO Projects
+    // SEO
+    about_seo_title: "About me",
+    about_description: "Discover more about Victor Ciolac, a Full Stack developer passionate about technology and innovation.",
     project_title: "Projects | Victor Ciolac",
     projects_description: "Get to know some of the projects I've developed. Each one of them is unique and was created with dedication and passion.",
   },

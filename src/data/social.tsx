@@ -1,5 +1,5 @@
 import path from "path";
-import { RiLinkedinFill, RiInstagramFill, RiFacebookFill, RiYoutubeFill, RiTwitterXFill } from "react-icons/ri";
+import { RiLinkedinFill, RiInstagramFill, RiFacebookFill, RiYoutubeFill, RiTwitterXFill, RiGithubFill } from "react-icons/ri";
 
 export const icons = [
     {
@@ -12,4 +12,9 @@ export const icons = [
       name: <RiLinkedinFill />,
       title: "Linkedin"
     },
+    {
+      path: "https://www.github.com/vciolac/",
+      name: <RiGithubFill />,
+      title: "Github"
+    }
   ];
