@@ -32,7 +32,7 @@ const LanguageSwitcher = ({ isMobile = false }: { isMobile?: boolean }) => {
         className={`absolute inset-0 bg-cover bg-center transition-all duration-300
         ${hovered ? 'opacity-100' : 'opacity-0'}`}
         style={{
-          backgroundImage: `url(/flags/${language === 'pt' ? 'us' : 'br'}.png)`,
+          backgroundImage: `url(/flags/${language === 'pt' ? 'br' : 'us'}.png)`,
         }}
       ></span>
       <span className="relative z-10">

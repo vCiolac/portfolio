@@ -5,6 +5,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { FiArrowUpRight } from 'react-icons/fi';
 import Image from 'next/image';
 import Link from 'next/link';
+import { projectsData } from '@/data/projects';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -93,7 +94,7 @@ const HomeProject = () => {
           <div className='flex flex-row gap-x-8'>
             <Link
               target="_blank"
-              href="#"
+              href={projectsData[0].link}
               className="flex items-center text-lg md:text-xl font-neue animate-underline dark:dark-animate-underline"
             >
               {t('view_website')} <FiArrowUpRight className="ml-2" />
@@ -110,7 +111,7 @@ const HomeProject = () => {
 
         <div ref={imageRef} className="relative justify-self-center">
           <Image
-            src="/tora.png"
+            src={projectsData[0].image}
             alt="Project Image"
             width={560}
             height={560}
@@ -119,7 +120,7 @@ const HomeProject = () => {
         </div>
         <div className="mt-16 ">
           <Link
-            href="#"
+            href="/projects"
             className="text-lg md:text-xl font-neue animate-border dark:dark-animate-border"
           >
             {t('see_all_projects')}

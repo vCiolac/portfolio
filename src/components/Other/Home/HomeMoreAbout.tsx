@@ -47,7 +47,7 @@ const HomeMoreAbout = () => {
       }}
         className="text-xl text-left mb-8 font-medium font-neue">
         <Link href="/about" className="animate-border dark:dark-animate-border">
-          Saiba mais sobre mim
+        {t('home_more_about_me')}
         </Link>
       </div>
     </div>

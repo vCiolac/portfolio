@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { icons } from "@/data/social";
 import { SocialInterface } from "@/interfaces/SocialInterface";
 

@@ -93,15 +93,15 @@ const HomeAbout = () => {
       >
         01
       </div>
-      <div className='container mx-auto pl-4 pr-16 md:pr-40 md:pl-52'>
+      <div className='container mx-auto pl-4 pr-14 md:pr-40 md:pl-52'>
         <div
           ref={(el) => {
             aboutRefs.current[0] = el;
           }}
-          className="text-3xl md:text-4xl font-medium text-left space-y-1 uppercase font-neue"
+          className="text-2xl md:text-3xl font-medium text-left space-y-1 uppercase font-neue"
         >
           {animateText(t('home_about'))}
-          <p className="text-3xl md:text-4xl font-medium pt-8 space-y-1">
+          <p className="text-2xl md:text-3xl font-medium pt-8 space-y-1">
             {animateText(t('home_about_1'))}
           </p>
         </div>
@@ -109,7 +109,7 @@ const HomeAbout = () => {
           ref={(el) => {
             aboutRefs.current[1] = el;
           }}
-          className="text-3xl text-left md:text-4xl space-y-1 font-medium my-8 uppercase font-neue"
+          className="text-2xl md:text-3xl text-left space-y-1 font-medium my-8 uppercase font-neue"
         >
           {animateText(t('home_about_2'))}
         </div>

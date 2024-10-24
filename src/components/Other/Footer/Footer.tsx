@@ -30,7 +30,7 @@ const Footer = () => {
             © {new Date().getFullYear()}
           </p>
           <p className="text-md md:text-xl">
-            Todos os direitos reservados
+            {t("copy")}
           </p>
         </div>
       </div>

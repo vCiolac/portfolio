@@ -52,7 +52,7 @@ const HomeContact = () => {
           </div>
           <div className="mt-4">
             <Link
-              href="#"
+              href="/contact"
               className="text-lg md:text-xl font-neue animate-border dark:dark-animate-border"
             >
               {t('home_contact')}
