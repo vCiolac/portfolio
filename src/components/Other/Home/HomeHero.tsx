@@ -147,7 +147,7 @@ const HomeHero = () => {
           <div className="flex flex-col justify-center align-middle items-center md:hidden text-center profile-image pt-10">
             <div ref={imageRefSmall} className="profile-image overflow-hidden">
               <Image
-                src="/profile-pic-mato.png"
+                src="/profile-pic-avatar.jpg"
                 alt="Profile Image"
                 width={250}
                 height={250}
@@ -184,7 +184,7 @@ const HomeHero = () => {
           <div className="text-center profile-image">
             <div ref={imageRefLarge} className="profile-image overflow-hidden">
               <Image
-                src="/profile-pic-mato.png"
+                src="/profile-pic-avatar.jpg"
                 alt="Profile Image"
                 width={300}
                 height={300}
