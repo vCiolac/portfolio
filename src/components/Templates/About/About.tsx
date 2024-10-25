@@ -150,7 +150,7 @@ const AboutPage = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.7 }}
-      className='py-24 dark:bg-offwhite text-white dark:text-black flex flex-col'>
+      className='py-24 dark:bg-offwhite text-white dark:text-black flex flex-col max-w-full'>
       <div ref={titleRef} className="uppercase mb-8 self-center">
         <AnimatedText
           text={t('about_title')}
