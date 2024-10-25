@@ -56,7 +56,6 @@ const ContactPage = () => {
 
   useEffect(() => {
     if (sectionRef.current && headingRef.current && subheadingRef.current && formRef.current) {
-      // Animação de entrada para os textos e formulário
       gsap.timeline()
         .fromTo(sectionRef.current, { opacity: 0 }, { opacity: 1, duration: 1, delay: 0.5 })
         .fromTo(headingRef.current, { opacity: 0, y: -50 }, { opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 0.5 }, 0)
@@ -64,7 +63,6 @@ const ContactPage = () => {
         .fromTo(formRef.current, { opacity: 0, scale: 0.8, rotation: -10 }, { opacity: 1, scale: 1, rotation: 0, delay: 0.5, duration: 1.5, ease: 'elastic.out(1, 0.5)' }, 0.4);
     }
 
-    // Nova animação de saída
     timeline.add(
       gsap.to(formRef.current, {
         opacity: 0,

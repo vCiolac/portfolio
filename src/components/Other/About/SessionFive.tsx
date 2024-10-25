@@ -1,20 +1,14 @@
-import { useEffect, useRef, useContext } from 'react';
+import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useLanguage } from '@/context/LanguageContext';
-import { TransitionContext } from '@/context/TransitionContext';
-import AnimatedText from '@/components/Other/AnimatedText/AnimatedText';
 import { motion } from 'framer-motion';
-import SessionTwo from '@/components/Other/About/SessionTwo';
-import SessionThree from '@/components/Other/About/SessionThree';
-import SessionFour from '@/components/Other/About/SessionFour';
-import SessionFive from '@/components/Other/About/SessionFive';
+import AnimatedText from '../AnimatedText/AnimatedText';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AboutPage = () => {
+const SessionFive = () => {
   const { t } = useLanguage();
-  const { timeline } = useContext(TransitionContext);
   const aboutRefs = useRef<(HTMLDivElement | null)[]>([]);
   const numberRef = useRef<HTMLDivElement | null>(null);
   const titleRef = useRef<HTMLDivElement | null>(null);
@@ -67,7 +61,6 @@ const AboutPage = () => {
           opacity: 1,
           y: 0,
           duration: 2,
-          delay: 0.5,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: numberRef.current,
@@ -95,55 +88,7 @@ const AboutPage = () => {
 
   useEffect(() => {
     triggerAnimation();
-    timeline.add(
-      gsap.to(titleRef.current, {
-        y: 650,
-        opacity: 0,
-        duration: 1.0,
-        ease: 'power3.in',
-        stagger: 0.08,
-      }),
-      0
-    );
-    aboutRefs.current.forEach((ref) => {
-      if (ref) {
-        const words = ref.querySelectorAll('span');
-        timeline.add(
-          gsap.to(words, {
-            y: 50,
-            opacity: 0,
-            duration: 0.5,
-            ease: 'power3.in',
-            stagger: 0.02,
-          }),
-          0
-        );
-      }
-    });
-    if (numberRef.current) {
-      timeline.add(
-        gsap.to(numberRef.current, {
-          opacity: 0,
-          y: 100,
-          duration: 0.5,
-          ease: 'power2.in',
-        }),
-        1
-      );
-    }
-    timeline.add(
-      gsap.to(".about-intro-text span", {
-        y: 50,
-        opacity: 0,
-        duration: 0.5,
-        ease: 'power3.in',
-        stagger: 0.02,
-      }),
-      0
-    );
-  
-  }, [numberRef, timeline]);
-  
+  }, []);
 
   return (
     <motion.section
@@ -151,33 +96,31 @@ const AboutPage = () => {
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.7 }}
       className='py-24 dark:bg-offwhite text-white dark:text-black flex flex-col'>
-      <div ref={titleRef} className="uppercase mb-8 self-center">
+      <div ref={titleRef} className="uppercase mb-8 px-4">
         <AnimatedText
-          text={t('about_title')}
-          className="font-semibold md:text-7xl text-4xl"
+          text={t('about_fifth')}
+          className="font-semibold md:text-5xl text-2xl"
           delay={1}
         />
-      </div>
-      <div className="uppercase mb-8 px-4 about-intro-text">
         <AnimatedText
-          text={t('about_intro')}
+          text={t('about_fifth2')}
           className="font-semibold md:text-5xl text-2xl"
           delay={1}
         />
       </div>
       <div className='flex flex-row w-full'>
-        <div
+      <div
           ref={numberRef}
           className="text-xl font-bold text-center md:px-16 pl-10 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/intro.jpg')",
+            backgroundImage: "url('/familia.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             color: 'black',
             borderRadius: '10px',
           }}
         >
-          01
+          05
         </div>
 
         <motion.div
@@ -190,19 +133,15 @@ const AboutPage = () => {
             ref={(el) => { aboutRefs.current[0] = el; }}
             className="text-xl md:text-2xl font-medium text-left space-y-1 font-neue"
           >
-            {animateText(t('about_text'))}
+            {animateText(t('about_text9'))}
             <p className="text-xl md:text-2xl font-medium pt-8 space-y-1">
-              {animateText(t('about_text1'))}
+              {animateText(t('about_text10'))}
             </p>
           </div>
         </motion.div>
       </div>
-      <SessionTwo />
-      <SessionThree />
-      <SessionFour />
-      <SessionFive />
     </motion.section>
   );
 };
 
-export default AboutPage;
+export default SessionFive;

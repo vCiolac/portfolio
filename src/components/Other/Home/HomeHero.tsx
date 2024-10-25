@@ -32,7 +32,7 @@ const HomeHero = () => {
           opacity: 1,
           duration: 2.8,
           ease: 'power3.out',
-          delay: 0
+          delay: 0.5
         }
       );
     }
@@ -46,7 +46,7 @@ const HomeHero = () => {
           opacity: 1,
           duration: 2.0,
           ease: 'power3.out',
-          delay: 0.33
+          delay: 0.5
         }
       );
     }
