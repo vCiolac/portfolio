@@ -3,6 +3,7 @@ import HomeContact from '@/components/Other/Home/HomeContact';
 import HomeHero from '@/components/Other/Home/HomeHero';
 import HomeProject from '@/components/Other/Home/HomeProject';
 import HomeWorks from '@/components/Other/Home/HomeWorks';
+import ScrollingLogos from '@/components/Other/ScrollingLogos/ScrollingLogos';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeWorks />
       <HomeProject />
       <HomeContact />
+      <ScrollingLogos />
     </section>
   );
 };

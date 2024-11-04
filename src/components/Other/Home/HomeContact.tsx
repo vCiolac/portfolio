@@ -23,8 +23,8 @@ const HomeContact = () => {
           ease: 'power3.out',
           scrollTrigger: {
             trigger: contactRef.current,
-            start: 'top 85%',
-            end: 'bottom 60%',
+            start: 'top 95%',
+            end: 'bottom 80%',
             scrub: true,
           },
         }

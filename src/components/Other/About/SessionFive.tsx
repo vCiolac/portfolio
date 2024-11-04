@@ -88,7 +88,7 @@ const SessionFive = () => {
 
   useEffect(() => {
     triggerAnimation();
-  }, []);
+  }, [t]);
 
   return (
     <motion.section

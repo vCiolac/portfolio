@@ -60,7 +60,7 @@ export const worksData = [
     title: "work_title",
     description: "work_description",
     image: "/images/cmtrat.png",
-    link: "https://www.cmtrat.com.br/", 
+    link: "https://cmtrat.vercel.app/",  //https://www.cmtrat.com.br/"
   },
   {
     title: "work_title2",

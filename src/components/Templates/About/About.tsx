@@ -142,7 +142,7 @@ const AboutPage = () => {
       0
     );
   
-  }, [numberRef, timeline]);
+  }, [t, numberRef, timeline]);
   
 
   return (
