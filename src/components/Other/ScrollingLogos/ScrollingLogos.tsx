@@ -12,6 +12,9 @@ const ScrollingLogos = () => {
     const interval = setInterval(() => {
       if (containerRef.current && !isDragging) {
         containerRef.current.scrollLeft += 1;
+        if (containerRef.current.scrollLeft >= containerRef.current.scrollWidth / 2) {
+          containerRef.current.scrollLeft = 0;
+        }
       }
     }, 30);
 
@@ -51,9 +54,9 @@ const ScrollingLogos = () => {
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsDragging(false)}
       >
-        {skillsData.map((skill, index) => (
+        {skillsData.concat(skillsData).map((skill, index) => (
           <div
-            className="mx-6 text-gray-500 flex flex-col justify-center items-center text-center bg-gray-900 bg-opacity-70 rounded-md py-2 px-4 min-w-36 select-none"
+            className="mx-6 text-gray-500 flex flex-col justify-center items-center text-center bg-[#191817] bg-opacity-70 rounded-md py-2 px-4 min-w-36 select-none"
             key={index}
           >
             <Image
@@ -65,6 +68,7 @@ const ScrollingLogos = () => {
                 objectFit: 'contain',
                 userSelect: 'none',
               }}
+              draggable="false"
               className="hover:filter-none transition-all duration-300 cursor-pointer text-gray-500 min-h-[50px]"
             />
             <p className="text-[0.85em] font-extralight pt-2 text-gray-200 select-none">{skill.name}</p>

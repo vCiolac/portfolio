@@ -101,7 +101,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ title, description, image, link }) 
           <h3 className="text-4xl md:text-7xl uppercase font-neue font-medium">
             {title}
           </h3>
-          <p className="text-lg md:text-xl uppercase font-neue font-medium my-8">
+          <p className="text-lg md:text-xl font-neue font-medium my-8">
             <TypeWriter text={description || ''} speed={8} reset={resetDescription} />
           </p>
         </div>
