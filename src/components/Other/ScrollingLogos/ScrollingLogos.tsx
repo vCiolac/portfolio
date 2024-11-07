@@ -13,10 +13,10 @@ const ScrollingLogos = () => {
       if (containerRef.current && !isDragging) {
         containerRef.current.scrollLeft += 1;
         if (containerRef.current.scrollLeft >= containerRef.current.scrollWidth / 2) {
-          containerRef.current.scrollLeft = 0;
+          containerRef.current.scrollLeft -= containerRef.current.scrollWidth / 2;
         }
       }
-    }, 30);
+    }, 20);
 
     return () => clearInterval(interval);
   }, [isDragging]);
@@ -27,13 +27,9 @@ const ScrollingLogos = () => {
     setScrollLeft(containerRef.current?.scrollLeft || 0);
   };
 
-  const handleMouseLeave = () => {
-    setIsDragging(false);
-  };
+  const handleMouseLeave = () => setIsDragging(false);
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  const handleMouseUp = () => setIsDragging(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!isDragging || !containerRef.current) return;
