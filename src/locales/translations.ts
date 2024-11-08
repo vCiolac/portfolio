@@ -1,5 +1,3 @@
-import { emit, send } from "process";
-
 export type Language = 'pt' | 'en';
 
 interface Translations {
@@ -64,7 +62,9 @@ export const translations: TranslationsByLanguage = {
     work_description: "Desenvolvido em TypeScript com Next e Node.js, o site da CMTrat utiliza MySQL para gestão de dados. O projeto inclui um painel administrativo robusto para gerenciar todo o conteúdo dinâmico do site, como projetos, galeria, notícias e clientes. A plataforma é otimizada para performance e segurança, refletindo as soluções biotecnológicas e sustentáveis da CMTrat no tratamento de efluentes e manutenção de sistemas hidráulicos.",
     work_title2: "IFWB",
     work_description2: "O site oficial da IFWB. Um evento que promove a moda como ferramenta de resistência e diversidade, destacando o trabalho criativo de estilistas indígenas. Em 2025, o IFWB vai celebrar a cultura indígena por meio de desfiles, debates e manifestações artísticas, projetando suas criações para o cenário nacional e internacional",
-
+    work_title3: "E-loc Motos",
+    work_description3: "Landing page desenvolvida para a E-loc Motos, uma locadora de motos por assinatura. Esta página apresenta a empresa e os planos disponíveis, destacando os benefícios e integrando um formulário de contato que facilita a comunicação com os visitantes. Com design moderno e navegação otimizada, o site oferece uma experiência fluida e centrada na conversão de novos clientes.",
+        
     // Projetos Pessoais
     personal_project_title: "Tora Wood",
     personal_project_description: "E-commerce oficial da minha marca de biojoias. Oferecendo uma experiência de compra intuitiva e segura. Com integração de pagamento via Pix, cartões de crédito, e funcionalidades como recomendações personalizadas e avaliações, ele une elegância e tecnologia para destacar a beleza das biojoias",
@@ -157,7 +157,9 @@ export const translations: TranslationsByLanguage = {
     work_description: "Developed in TypeScript with Next and Node.js, the CMTrat website uses MySQL for data management. The project includes a robust administrative panel to manage all dynamic site content, such as projects, gallery, news, and clients. The platform is optimized for performance and security, reflecting CMTrat's biotechnological and sustainable solutions in wastewater treatment and hydraulic system maintenance.",
     work_title2: "IFWB",
     work_description2: "The official IFWB website. An event that promotes fashion as a tool for resistance and diversity, highlighting the creative work of indigenous stylists. In 2025, the IFWB will celebrate indigenous culture through fashion shows, debates, and artistic manifestations, projecting their creations to the national and international scene",
-
+    work_title3: "E-loc Motos",
+    work_description3: "Landing page developed for E-loc Motos, a motorcycle rental company with a subscription model. This page introduces the company and available plans, highlighting the benefits and integrating a contact form that facilitates communication with visitors. With a modern design and optimized navigation, the site offers a smooth experience focused on converting new customers.",
+    
     // Projects
     projects: "Projects",
     personal_project_title: "Tora Wood",

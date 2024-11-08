@@ -57,6 +57,12 @@ export const projectsData = [
 
 export const worksData = [
   {
+    title: "work_title3",
+    description: "work_description3",
+    image: "/images/eloc.png",
+    link: "https://www.e-locmotos.com.br/",
+  },
+  {
     title: "work_title",
     description: "work_description",
     image: "/images/cmtrat.png",

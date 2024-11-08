@@ -3,7 +3,7 @@ import { RiLinkedinFill, RiInstagramFill, RiFacebookFill, RiYoutubeFill, RiTwitt
 
 export const icons = [
     {
-      path: "https://www.instagram.com/vciolac/",
+      path: "https://www.instagram.com/ciolac/",
       name: <RiInstagramFill />,
       title: "Instagram"
     },

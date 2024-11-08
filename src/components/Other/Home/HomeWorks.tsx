@@ -88,8 +88,8 @@ const HomeWorks = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:px-16 px-4">
         <div ref={textRef} className="flex flex-col justify-between">
           <div>
-            <h3 className="text-4xl md:text-7xl uppercase font-neue font-medium">{t('work_title')}</h3>
-            <p className="text-lg md:text-xl uppercase font-neue font-medium my-8">{t('work_description')}</p>
+            <h3 className="text-4xl md:text-7xl uppercase font-neue font-medium">{t('work_title3')}</h3>
+            <p className="text-lg md:text-xl uppercase font-neue font-medium my-8">{t('work_description3')}</p>
           </div>
           <div className='flex flex-row gap-x-8'>
             <Link
